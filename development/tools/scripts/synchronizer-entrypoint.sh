@@ -6,7 +6,7 @@ set -o pipefail
 readonly DEVELOPMENT_DIR=$1
 
 echo "----------------------------------------------"
-echo "## Check component version synchroznization ##"
+echo "## Check component version synchronization ##"
 echo "----------------------------------------------"
 
 if [ ! -d "${DEVELOPMENT_DIR}/tools/vendor" ]; then

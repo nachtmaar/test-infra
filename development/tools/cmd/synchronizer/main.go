@@ -41,7 +41,7 @@ func main() {
 	outOfDateDays, err := strconv.Atoi(os.Getenv(envOutOfDateThreshold))
 
 	if err != nil {
-		log.Printf("Cannot tranform %s env to integer, default value '%d' will be used", envOutOfDateThreshold, defaultOutOfDateDays)
+		log.Printf("Cannot transform %s env to integer, default value '%d' will be used", envOutOfDateThreshold, defaultOutOfDateDays)
 		outOfDateDays = defaultOutOfDateDays
 	}
 	if rootDir == "" {
