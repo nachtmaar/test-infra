@@ -30,7 +30,7 @@ if [ "${discoverUnsetVar}" = true ] ; then
 fi
 
 #Exported variables
-export TEST_INFRA_SOURCES_DIR="${KYMA_PROJECT_DIR}/../nachtmaar/test-infra"
+export TEST_INFRA_SOURCES_DIR="/home/prow/go/src/github.com/nachtmaar/test-infra"
 export TEST_INFRA_CLUSTER_INTEGRATION_SCRIPTS="${TEST_INFRA_SOURCES_DIR}/prow/scripts/cluster-integration/helpers"
 
 # shellcheck disable=SC1090
