@@ -9,7 +9,10 @@ install::kyma_cli() {
 
     log::info "- Install kyma CLI ${os} locally to a tempdir..."
 
-    curl -sSLo kyma "https://storage.googleapis.com/kyma-cli-stable/kyma-${os}?alt=media"
+    go get github.com/kyma-project/cli || true
+    cd $GOPATH/src/github.com/kyma-project/cli
+    go build cmd/main.go
+    mv main kyma
     chmod +x kyma
 
     log::success "OK"

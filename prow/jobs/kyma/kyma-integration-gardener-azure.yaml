@@ -8,8 +8,8 @@ periodics:
   extra_refs:
     - org: kyma-project
       repo: test-infra
-      path_alias: github.com/kyma-project/test-infra
-      base_ref: master
+      path_alias: github.com/nachtmaar/test-infra
+      base_ref: kyma-cli-gardener-fix
   labels:
     preset-gardener-azure-kyma-integration: "true"
     preset-kyma-cli-stable: "true"
@@ -22,7 +22,7 @@ periodics:
       securityContext:
         privileged: true
       command:
-      - "/home/prow/go/src/github.com/kyma-project/test-infra/prow/scripts/cluster-integration/kyma-gardener-integration.sh"
+      - "/home/prow/go/src/github.com/nachtmaar/test-infra/prow/scripts/cluster-integration/kyma-gardener-integration.sh"
       env:
       - name: KYMA_PROJECT_DIR
         value: "/home/prow/go/src/github.com/kyma-project"
